@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Personal portfolio of [Your Name] — projects, skills, and contact." />
+  <meta name="author" content="[Your Name]" />
+  <title>Sunil Bombe — Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- jQuery CDN (required for script.js) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+  <!-- Main JS -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Sticky header / nav -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="#home">Sunil Bombe</a>
+      <nav>
+        <ul class="nav" id="nav">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <!-- HOME / HERO -->
+  <main>
+    <section id="home" class="hero section">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Hi, I’m <span class="accent">Sunil Bombe</span></h1>
+          <p class="lead">Software Engineer • Problem-solver • Builder of clean and scalable web solutions.</p>
+          <p class="cta">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </p>
+        </div>
+        <div class="hero-image">
+          <img src="assets/profile-photo.jpeg" alt="Profile placeholder">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>I'm a software engineer focused on building efficient and user-friendly applications. I love learning new technologies and applying best practices in architecture and testing.</p>
+            <ul>
+              <li>🎓 M.Sc Computer Science</li>
+              <li>💼 4 years experience</li>
+              <li>🔭 Currently exploring cloud-native & AI tools</li>
+            </ul>
+          </div>
+          <div class="about-stats reveal">
+            <div class="card">
+              <strong>3+</strong><span>Years Experience</span>
+            </div>
+            <div class="card">
+              <strong>15+</strong><span>Projects</span>
+            </div>
+            <div class="card">
+              <strong>Open</strong><span>For Opportunities</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill reveal">
+            <h3>Frontend</h3>
+            <p>HTML5, CSS3, JavaScript, jQuery, React (familiar)</p>
+          </div>
+          <div class="skill reveal">
+            <h3>Backend</h3>
+            <p>Java, Node.js, REST APIs</p>
+          </div>
+          <div class="skill reveal">
+            <h3>Cloud & Tools</h3>
+            <p>AWS, Docker, Git, CI/CD</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS / PORTFOLIO -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+
+        <!-- filter controls -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="ml">ML</button>
+          <button class="filter-btn" data-filter="devops">DevOps</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- sample project card -->
+          <article class="project-card reveal" data-category="web">
+            <img src="assets/Gemini_Generated_Image_g4vb99g4vb99g4vb.png" alt="Project">
+            <div class="project-body">
+              <h4>Portfolio Website</h4>
+              <p>Responsive single-page portfolio built with HTML, CSS, and jQuery.</p>
+              <p class="project-meta">Web • Frontend</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="ml">
+            <img src="assets/Gemini_Generated_Image_z5yoz6z5yoz6z5yo.png" alt="Project">
+            <div class="project-body">
+              <h4>ML Classifier</h4>
+              <p>Prototype image classifier using Python & scikit-learn.</p>
+              <p class="project-meta">ML • Research</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="devops">
+            <img src="assets/Gemini_Generated_Image_du7leddu7leddu7l.png" alt="Project">
+            <div class="project-body">
+              <h4>CI/CD Pipeline</h4>
+              <p>Automated deploy pipeline with Docker and GitHub Actions.</p>
+              <p class="project-meta">DevOps • Automation</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="web">
+            <img src="assets/Gemini_Generated_Image_j86xrkj86xrkj86x.png" alt="Project">
+            <div class="project-body">
+              <h4>Task Manager App</h4>
+              <p>CRUD app with localStorage and progressive enhancement.</p>
+              <p class="project-meta">Web • Frontend</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <h3>Let's build something together</h3>
+            <p>Email: <a href="mailto:sunil.bombe1998@gmail.com">sunil.bombe1998@gmail.com</a></p>
+            <p>Location: Pune, Maharashtra India</p>
+            <p>Find me on <a href="https://github.com/sunil-bombe" target="_blank" rel="noopener">GitHub</a> • <a href="https://www.linkedin.com/in/sunil-bombe-5276b026a/" target="_blank" rel="noopener">LinkedIn</a></p>
+          </div>
+
+          <form id="contactForm" class="contact-form reveal" novalidate>
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required>
+              <small class="error" data-for="name"></small>
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required>
+              <small class="error" data-for="email"></small>
+            </div>
+
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+              <small class="error" data-for="message"></small>
+            </div>
+
+            <div class="form-row">
+              <button type="submit" class="btn">Send Message</button>
+              <span id="formStatus" class="form-status" aria-live="polite"></span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- back to top -->
+  <button id="backToTop" title="Back to top">↑</button>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Sunil Bombe. Built with ❤️ • HTML, CSS & jQuery</p>
+    </div>
+  </footer>
+
+</body>
+</html>
